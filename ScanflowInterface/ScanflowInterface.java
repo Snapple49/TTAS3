@@ -1,4 +1,4 @@
-package com.example;
+package ScanflowInterface;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;

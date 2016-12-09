@@ -1,4 +1,4 @@
-package com.example;
+package ScanflowInterface;
 
 /**
  * Created by matheusandrade on 12/8/16.
