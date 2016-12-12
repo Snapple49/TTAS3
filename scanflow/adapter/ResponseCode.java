@@ -1,4 +1,4 @@
-package ScanflowInterface;
+package scanflow.adapter;
 
 /**
  * Created by matheusandrade on 12/8/16.
