@@ -14,19 +14,29 @@ public class ScanflowInterface {
     private Socket socket;
     private BufferedReader input;
     private DataOutputStream output;
+    private boolean success;
     public static boolean DEBUG = false;
 
     public ScanflowInterface() {
+    	success = false;
         try {
             this.socket = new Socket("sid.cs.ru.nl", 25999);
             this.socket.setSoTimeout(2000);
             this.input = new BufferedReader(new InputStreamReader(this.socket.getInputStream()));
             this.output = new DataOutputStream(this.socket.getOutputStream());
+            if (input.readLine().equals("220 SCRP Service ready")){
+            	System.out.println("Successfully connected to server");
+            	success = true;
+            }
         } catch (Exception e) {
             System.out.println("Failed trying to open socket:" + e);
         }
     }
 
+    public boolean interfaceIsConnected(){
+    	return this.success;
+    }
+    
     private List<ResponseCode> runCommand(String command) {
         return runCommand(command, 1);
     }

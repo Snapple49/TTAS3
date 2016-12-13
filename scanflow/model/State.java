@@ -6,5 +6,5 @@ public enum State {
 	AS_IDLE,
 	AS_OPEN,
 	AS_CLOSED,
-	AS_TRANSING;
+	AS_ENDING;
 }
