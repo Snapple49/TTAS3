@@ -14,11 +14,11 @@ public class ScanflowInterface {
     private Socket socket;
     private BufferedReader input;
     private DataOutputStream output;
-    private boolean success;
+    private boolean connected;
     public static boolean DEBUG = false;
 
     public ScanflowInterface() {
-    	success = false;
+    	connected = false;
         try {
             this.socket = new Socket("sid.cs.ru.nl", 25999);
             this.socket.setSoTimeout(2000);
@@ -26,7 +26,7 @@ public class ScanflowInterface {
             this.output = new DataOutputStream(this.socket.getOutputStream());
             if (input.readLine().equals("220 SCRP Service ready")){
             	System.out.println("Successfully connected to server");
-            	success = true;
+            	connected = true;
             }
         } catch (Exception e) {
             System.out.println("Failed trying to open socket:" + e);
@@ -34,7 +34,7 @@ public class ScanflowInterface {
     }
 
     public boolean interfaceIsConnected(){
-    	return this.success;
+    	return this.connected;
     }
     
     private List<ResponseCode> runCommand(String command) {
@@ -44,13 +44,18 @@ public class ScanflowInterface {
     private List<ResponseCode> runCommand(String command, int lines) {
         List<String> responses = new ArrayList<>();
         try {
-            this.output.writeBytes(command);
-            responses = flushLines(lines);
+        	if(lines <= 0){
+        		this.output.writeBytes(command);
+        		this.output.flush();
+        	}else{
+        		this.output.writeBytes(command);
+        		responses = flushLines(lines);
 
-            if (DEBUG) {
-                System.out.println(command);
-                System.out.println(responses);
-            }
+        		if (DEBUG) {
+        			System.out.println(command);
+        			System.out.println(responses);
+        		}
+        	}
         } catch (Exception e) {
             System.out.println("Erro1: " + e);
         }
@@ -141,9 +146,12 @@ public class ScanflowInterface {
         return getVariable("CS_ACCNT");
     }
 
-    public List<ResponseCode> quit() {
-        String command = "quit\n";
-        return runCommand(command);
+    public void quit() {
+    	String command = "signoff\n"; 
+    	runCommand(command);
+    	command = "quit\n";
+    	runCommand(command, 0);  
+    	this.connected = false;
     }
 
     private List<ResponseCode> stringsToResponses(List<String> strings) {

@@ -67,6 +67,8 @@ public class ScanflowModel implements FsmModel
 	public void reset(boolean testing)
 	{
 		i.signOff();
+		i.quit();
+		i = new ScanflowInterface();
 		state = State.NOT_SIGNED;
 		isSignedIn = false;
 	}
