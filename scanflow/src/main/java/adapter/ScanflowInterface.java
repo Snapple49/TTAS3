@@ -15,7 +15,7 @@ public class ScanflowInterface {
     private BufferedReader input;
     private DataOutputStream output;
     private boolean connected;
-    public static boolean DEBUG = false;
+    public static boolean DEBUG = true;
 
     public ScanflowInterface() {
     	connected = false;
@@ -93,17 +93,17 @@ public class ScanflowInterface {
         return runCommand(command);
     }
 
-    public List<ResponseCode> artId(int id) {
-        String command = String.format("artid %d\n", id);
+    public List<ResponseCode> artId(String id) {
+        String command = String.format("artid %s\n", id);
         return runCommand(command);
     }
 
-    public List<ResponseCode> artReg(int id) {
+    public List<ResponseCode> artReg(String id) {
         return artReg(id, 1);
     }
 
-    public List<ResponseCode> artReg(int id, int amount) {
-        String command = String.format("artreg %d:%d\n", id, amount);
+    public List<ResponseCode> artReg(String id, int amount) {
+        String command = String.format("artreg %s:%d\n", id, amount);
         return runCommand(command, 2);
     }
 

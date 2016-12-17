@@ -1,1 +1,6 @@
+scanflow/adapter/ResponseCode.class
+scanflow/adapter/ScanflowState.class
+scanflow/adapter/ValidArtId.class
+scanflow/adapter/ScanflowInterface.class
+scanflow/adapter/InvalidArtId.class
 org/myorg/testautomation/Scanflow.class

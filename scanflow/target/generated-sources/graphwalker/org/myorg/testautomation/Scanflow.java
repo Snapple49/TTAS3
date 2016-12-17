@@ -9,17 +9,62 @@ import org.graphwalker.java.annotation.Edge;
 public interface Scanflow {
 
     @Vertex()
-    void Signed();
+    void AS_Open();
 
-    @Vertex()
-    void Not_Signed();
+    @Edge()
+    void idle();
 
     @Edge()
     void invalid_sign_on();
 
     @Edge()
-    void valid_sign_on();
+    void invalid_art_reg();
 
     @Edge()
-    void sign_off();
+    void valid_get();
+
+    @Edge()
+    void valid_sign_on();
+
+    @Vertex()
+    void Disconnected();
+
+    @Edge()
+    void invalid_trans();
+
+    @Edge()
+    void invalid_sign_off();
+
+    @Vertex()
+    void AS_Idle();
+
+    @Vertex()
+    void AS_Closed();
+
+    @Vertex()
+    void Not_Signed();
+
+    @Edge()
+    void valid_sign_off();
+
+    @Edge()
+    void close_acc();
+
+    @Vertex()
+    void AS_Ending();
+
+    @Edge()
+    void invalid_get();
+
+    @Edge()
+    void valid_art_reg();
+
+    @Edge()
+    void open_acc();
+
+    @Edge()
+    void valid_trans();
+
+    @Edge()
+    void connect();
 }
