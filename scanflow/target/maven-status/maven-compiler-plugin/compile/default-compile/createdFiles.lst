@@ -5,4 +5,5 @@ scanflow/adapter/ScanflowInterface.class
 scanflow/adapter/InvalidArtId.class
 org/myorg/testautomation/Scanflow.class
 scanflow/adapter/InvalidCRVariable.class
+scanflow/adapter/Command.class
 scanflow/adapter/ValidCRVariable.class

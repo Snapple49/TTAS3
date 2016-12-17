@@ -14,29 +14,12 @@ public class ScanflowInterface {
     private Socket socket;
     private BufferedReader input;
     private DataOutputStream output;
-    private boolean connected;
     public static boolean DEBUG = true;
 
     public ScanflowInterface() {
-    	connected = false;
-        try {
-            this.socket = new Socket("sid.cs.ru.nl", 25999);
-            this.socket.setSoTimeout(2000);
-            this.input = new BufferedReader(new InputStreamReader(this.socket.getInputStream()));
-            this.output = new DataOutputStream(this.socket.getOutputStream());
-            if (input.readLine().equals("220 SCRP Service ready")){
-            	System.out.println("Successfully connected to server");
-            	connected = true;
-            }
-        } catch (Exception e) {
-            System.out.println("Failed trying to open socket:" + e);
-        }
+
     }
 
-    public boolean interfaceIsConnected(){
-    	return this.connected;
-    }
-    
     private List<ResponseCode> runCommand(String command) {
         return runCommand(command, 1);
     }
@@ -76,6 +59,20 @@ public class ScanflowInterface {
             }
         }
         return responses;
+    }
+
+    public List<ResponseCode> connect(){
+        try {
+            this.socket = new Socket("sid.cs.ru.nl", 25999);
+            this.socket.setSoTimeout(2000);
+            this.input = new BufferedReader(new InputStreamReader(this.socket.getInputStream()));
+            this.output = new DataOutputStream(this.socket.getOutputStream());
+            List<String> responses = flushLines(1);
+            return stringsToResponses(responses);
+        } catch (Exception e) {
+            System.out.println("Failed trying to open socket:" + e);
+            return null;
+        }
     }
 
     public List<ResponseCode> signOn(int id, String password) {
@@ -151,7 +148,6 @@ public class ScanflowInterface {
     	runCommand(command);
     	command = "quit\n";
     	runCommand(command, 0);  
-    	this.connected = false;
     }
 
     private List<ResponseCode> stringsToResponses(List<String> strings) {

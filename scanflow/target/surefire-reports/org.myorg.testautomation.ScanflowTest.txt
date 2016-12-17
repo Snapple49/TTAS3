@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: org.myorg.testautomation.ScanflowTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 19.01 sec <<< FAILURE!
-StandardTest(org.myorg.testautomation.ScanflowTest)  Time elapsed: 18.325 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 118.53 sec <<< FAILURE!
+StandardTest(org.myorg.testautomation.ScanflowTest)  Time elapsed: 117.849 sec  <<< ERROR!
 org.graphwalker.java.test.TestExecutionException: Test execution contains failures
 	at org.graphwalker.java.test.TestExecutor.execute(TestExecutor.java:209)
 	at org.graphwalker.java.test.TestBuilder.execute(TestBuilder.java:142)
 	at org.graphwalker.java.test.TestBuilder.execute(TestBuilder.java:149)
-	at org.myorg.testautomation.ScanflowTest.StandardTest(ScanflowTest.java:177)
+	at org.myorg.testautomation.ScanflowTest.StandardTest(ScanflowTest.java:215)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

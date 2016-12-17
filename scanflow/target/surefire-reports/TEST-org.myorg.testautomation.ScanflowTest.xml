@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="org.myorg.testautomation.ScanflowTest" time="18.325" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="org.myorg.testautomation.ScanflowTest" time="117.849" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib"/>
@@ -62,12 +62,12 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="org.myorg.testautomation.ScanflowTest" name="StandardTest" time="18.325">
+  <testcase classname="org.myorg.testautomation.ScanflowTest" name="StandardTest" time="117.849">
     <error message="Test execution contains failures" type="org.graphwalker.java.test.TestExecutionException">org.graphwalker.java.test.TestExecutionException: Test execution contains failures
 	at org.graphwalker.java.test.TestExecutor.execute(TestExecutor.java:209)
 	at org.graphwalker.java.test.TestBuilder.execute(TestBuilder.java:142)
 	at org.graphwalker.java.test.TestBuilder.execute(TestBuilder.java:149)
-	at org.myorg.testautomation.ScanflowTest.StandardTest(ScanflowTest.java:177)
+	at org.myorg.testautomation.ScanflowTest.StandardTest(ScanflowTest.java:215)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -98,322 +98,2017 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
-    <system-out>12:29:06.665 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:06.666 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Disconnected
-12:29:06.715 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:06.716 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=Not_Signed;
-12:29:06.720 [main] DEBUG o.g.core.machine.ExecutionContext - Execute connect
-Successfully connected to server
-12:29:07.805 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:07.806 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:07.811 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:07.811 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:07.818 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:07.818 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:07.821 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:07.825 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:07.847 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_off
-signoff
-
-[550 Not signed on]
-12:29:08.372 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:08.372 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:08.373 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:08.373 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:08.374 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:08.374 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:08.374 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:08.374 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:08.374 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
-get PC_CR
-
-[210 PC_CR:1]
-12:29:08.898 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:08.898 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:08.899 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:08.899 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:08.900 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:08.900 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:08.901 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:08.902 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:08.902 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_off
-signoff
-
-[550 Not signed on]
-12:29:09.421 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:09.421 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:09.422 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:09.422 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:09.422 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:09.422 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:09.423 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:09.423 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:09.423 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
-get TC_STORE
-
-[210 TC_STORE:1]
-12:29:09.947 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:09.947 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:09.948 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:09.948 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:09.949 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:09.949 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:09.949 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:09.949 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:09.950 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
-signon 8:01
-
-[251 Signed On]
-12:29:10.476 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:10.476 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
-12:29:10.481 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:10.481 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
-get SI_MODEL
-
-[210 SI_MODEL:Simulator-Python]
-12:29:10.999 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:10.999 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
-12:29:11.000 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:11.000 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Idle;
-12:29:11.004 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
-signoff
-
-[250 Signed Off]
-12:29:11.526 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:11.526 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:11.527 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:11.527 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:11.528 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:11.528 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:11.529 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:11.529 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:11.529 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
+    <system-out>14:25:57.145 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:25:57.147 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Disconnected
+14:25:57.203 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:25:57.204 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=Not_Signed;
+14:25:57.207 [main] DEBUG o.g.core.machine.ExecutionContext - Execute connect
+14:25:58.292 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:25:58.292 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:25:58.298 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:25:58.298 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:25:58.323 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:25:58.327 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:25:58.331 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:25:58.336 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:25:58.340 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
 signon 7:81
 
 [551 Authentication failed]
-12:29:12.052 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:12.052 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:12.053 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:12.053 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:12.053 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:12.054 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:12.054 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:12.054 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:12.054 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_off
+14:25:58.864 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:25:58.864 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:25:58.865 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:25:58.865 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:25:58.866 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:25:58.866 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:25:58.866 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:25:58.866 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:25:58.867 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid -1
+
+[550 Not signed on]
+14:25:59.390 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:25:59.390 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:25:59.391 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:25:59.391 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:25:59.392 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:25:59.392 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:25:59.393 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:25:59.394 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:25:59.394 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 12313
+
+[550 Not signed on]
+14:25:59.913 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:25:59.913 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:25:59.914 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:25:59.914 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:25:59.915 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:25:59.915 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:25:59.915 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:25:59.915 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:25:59.916 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get LC_CNTRY
+
+[210 LC_CNTRY:NL]
+14:26:00.442 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:00.442 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:00.443 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:00.444 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:00.444 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:00.444 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:00.444 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:00.445 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:00.445 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_off
 signoff
 
 [550 Not signed on]
-12:29:12.572 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:12.573 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:12.574 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:12.574 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:12.574 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:12.575 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:12.575 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:12.575 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:12.576 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
+14:26:00.968 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:00.968 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:00.969 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:00.969 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:00.969 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:00.969 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:00.970 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:00.970 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:00.970 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 59922827
+
+[550 Not signed on]
+14:26:01.493 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:01.493 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:01.494 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:01.494 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:01.494 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:01.495 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:01.495 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:01.495 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:01.496 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_off
+signoff
+
+[550 Not signed on]
+14:26:02.014 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:02.014 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:02.015 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:02.015 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:02.016 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:02.016 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:02.016 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:02.016 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:02.017 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 59922827
+
+[550 Not signed on]
+14:26:02.535 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:02.535 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:02.536 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:02.536 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:02.537 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:02.537 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:02.537 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:02.537 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:02.538 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get MS_SRBC
+
+[210 MS_SRBC:0]
+14:26:03.057 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:03.057 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:03.058 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:03.058 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:03.058 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:03.058 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:03.058 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:03.059 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:03.059 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 20013226
+
+[550 Not signed on]
+14:26:03.577 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:03.578 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:03.578 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:03.578 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:03.579 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:03.579 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:03.579 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:03.579 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:03.580 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_off
+signoff
+
+[550 Not signed on]
+14:26:04.098 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:04.098 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:04.099 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:04.099 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:04.100 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:04.100 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:04.100 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:04.100 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:04.100 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 12313
+
+[550 Not signed on]
+14:26:04.619 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:04.619 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:04.620 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:04.620 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:04.620 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:04.621 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:04.621 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:04.621 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:04.621 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get Invalid
+
+[510 No such variable]
+14:26:05.145 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:05.145 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:05.146 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:05.146 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:05.146 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:05.146 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:05.146 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:05.147 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:05.147 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
 signon 8:01
 
 [251 Signed On]
-12:29:13.094 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:13.094 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
-12:29:13.095 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:13.096 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Idle;
-12:29:13.096 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
+14:26:05.671 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:05.671 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:26:05.677 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:05.677 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get LC_WEIGHT
+
+[210 LC_WEIGHT:GR]
+14:26:06.195 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:06.196 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:26:06.197 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:06.197 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 5998386301215
+
+[213 desc=&quot;Citrom izu szorp&quot; price=1,49]
+14:26:06.715 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:06.715 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:26:06.716 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:06.716 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_SOFTWWWW
+
+[510 No such variable]
+14:26:07.234 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:07.235 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:26:07.235 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:07.236 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 5998386301215
+
+[213 desc=&quot;Citrom izu szorp&quot; price=1,49]
+14:26:07.754 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:07.754 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:26:07.755 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:07.755 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Idle;
+14:26:07.758 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
 signoff
 
 [250 Signed Off]
-12:29:13.614 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:13.614 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:13.615 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:13.615 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:13.615 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:13.616 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:13.616 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:13.616 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:13.617 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
+14:26:08.280 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:08.280 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:08.281 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:08.281 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:08.281 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:08.281 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:08.282 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:08.282 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:08.282 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 22
+
+[550 Not signed on]
+14:26:08.801 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:08.801 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:08.801 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:08.802 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:08.802 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:08.802 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:08.802 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:08.802 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:08.803 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 22
+
+[550 Not signed on]
+14:26:09.321 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:09.321 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:09.322 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:09.322 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:09.322 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:09.322 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:09.322 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:09.323 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:09.323 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 20013226
+
+[550 Not signed on]
+14:26:09.841 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:09.841 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:09.842 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:09.842 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:09.842 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:09.843 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:09.843 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:09.843 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:09.843 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
 signon 8:01
 
 [251 Signed On]
-12:29:14.135 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:14.135 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
-12:29:14.140 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:14.140 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Ending;
-12:29:14.144 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
+14:26:10.362 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:10.362 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:26:10.363 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:10.363 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid -1
+
+[511 No such article]
+14:26:10.881 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:10.881 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:26:10.882 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:10.882 [main] DEBUG o.g.core.machine.ExecutionContext - Execute open_acc
+open
+
+[231 006072 Account opened]
+14:26:11.405 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:11.405 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:26:11.409 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:11.409 [main] DEBUG o.g.core.machine.ExecutionContext - Execute close_acc
+close
+
+[230 0,00 Account closed]
+14:26:11.931 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:11.932 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Closed
+14:26:11.937 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:11.937 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 22
+
+[511 No such article]
+14:26:12.456 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:12.456 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Closed
+14:26:12.457 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:12.457 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 12313
+
+[511 No such article]
+14:26:12.975 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:12.975 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Closed
+14:26:12.976 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:12.976 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 12313
+
+[511 No such article]
+14:26:13.495 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:13.495 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Closed
+14:26:13.496 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:13.496 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Closed;
+14:26:13.499 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
 signoff
 
 [250 Signed Off]
-12:29:14.662 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:14.663 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:14.663 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:14.663 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:14.664 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:14.664 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:14.664 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:14.664 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:14.665 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
+14:26:14.018 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:14.018 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:14.019 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:14.019 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:14.019 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:14.019 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:14.019 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:14.020 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:14.020 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
 signon 7:81
 
 [551 Authentication failed]
-12:29:15.185 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:15.185 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:15.187 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:15.187 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:15.187 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:15.188 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:15.188 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:15.188 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:15.188 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+14:26:14.538 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:14.538 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:14.539 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:14.539 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:14.539 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:14.539 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:14.539 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:14.540 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:14.540 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
+signon 7:81
+
+[551 Authentication failed]
+14:26:15.059 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:15.059 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:15.059 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:15.059 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:15.060 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:15.060 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:15.060 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:15.060 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:15.060 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
+signon 7:81
+
+[551 Authentication failed]
+14:26:15.579 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:15.579 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:15.579 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:15.579 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:15.580 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:15.580 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:15.581 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:15.581 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:15.581 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
+signon 7:81
+
+[551 Authentication failed]
+14:26:16.099 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:16.099 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:16.100 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:16.100 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:16.101 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:16.101 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:16.101 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:16.101 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:16.101 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 5998386301215
+
+[550 Not signed on]
+14:26:16.620 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:16.620 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:16.621 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:16.621 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:16.621 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:16.621 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:16.622 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:16.622 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:16.622 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 5998386301215
+
+[550 Not signed on]
+14:26:17.141 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:17.142 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:17.142 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:17.142 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:17.143 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:17.143 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:17.143 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:17.144 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:17.144 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 12313
+
+[550 Not signed on]
+14:26:17.662 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:17.662 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:17.663 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:17.663 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:17.663 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:17.663 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:17.664 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:17.664 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:17.664 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get Invalid
+
+[510 No such variable]
+14:26:18.182 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:18.182 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:18.183 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:18.183 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:18.183 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:18.184 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:18.184 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:18.184 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:18.184 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_off
+signoff
+
+[550 Not signed on]
+14:26:18.702 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:18.702 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:18.703 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:18.703 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:18.703 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:18.703 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:18.703 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:18.704 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:18.704 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
+signon 8:01
+
+[251 Signed On]
+14:26:19.223 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:19.223 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Closed
+14:26:19.223 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:19.223 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_trans
+trans TM_CASHhhhh
+
+[540 No Such Transaction method]
+14:26:19.745 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:19.745 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Closed
+14:26:19.746 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:19.746 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_trans
+trans TM_CASH
+
+[240 0,00 Transaction succeeded]
+14:26:20.267 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:20.268 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:20.272 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:20.272 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 12313
+
+[511 No such article]
+14:26:20.790 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:20.790 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:20.791 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:20.791 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_MODELLL
+
+[510 No such variable]
+14:26:21.310 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:21.310 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:21.311 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:21.311 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get CS_SIGN
+
+[210 CS_SIGN:SS_ON]
+14:26:21.829 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:21.829 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:21.830 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:21.830 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 12313
+
+[511 No such article]
+14:26:22.348 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:22.348 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:22.349 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:22.349 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Ending;
+14:26:22.352 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
+signoff
+
+[250 Signed Off]
+14:26:22.870 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:22.870 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:22.871 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:22.871 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:22.871 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:22.871 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:22.871 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:22.872 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:22.872 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 59922827
+
+[550 Not signed on]
+14:26:23.390 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:23.390 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:23.392 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:23.392 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:23.392 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:23.392 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:23.393 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:23.393 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:23.393 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 5998386301215
+
+[550 Not signed on]
+14:26:23.911 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:23.911 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:23.914 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:23.914 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:23.914 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:23.915 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:23.916 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:23.916 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:23.917 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 20013226
+
+[550 Not signed on]
+14:26:24.435 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:24.435 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:24.436 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:24.436 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:24.436 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:24.436 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:24.437 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:24.437 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:24.437 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid -1
+
+[550 Not signed on]
+14:26:24.955 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:24.955 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:24.956 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:24.956 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:24.956 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:24.956 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:24.956 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:24.956 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:24.957 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
 get LC_FRACT
 
 [210 LC_FRACT:2]
-12:29:15.707 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:15.707 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:15.708 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:15.708 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:15.708 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:15.708 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:15.709 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:15.709 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:15.709 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
-signon 7:81
+14:26:25.475 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:25.475 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:25.476 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:25.476 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:25.476 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:25.477 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:25.477 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:25.477 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:25.477 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
+signon 8:01
 
-[551 Authentication failed]
-12:29:16.227 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:16.227 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:16.228 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:16.228 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:16.229 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:16.229 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:16.229 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:16.230 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:16.230 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
-signon 7:81
-
-[551 Authentication failed]
-12:29:16.749 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:16.749 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:16.750 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:16.750 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:16.750 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:16.750 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:16.751 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:16.751 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:16.751 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
-signon 7:81
-
-[551 Authentication failed]
-12:29:17.270 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:17.270 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:17.271 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:17.271 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:17.272 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:17.272 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:17.272 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:17.273 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:17.273 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
-get MS_BCPFX
-
-[210 MS_BCPFX:8888]
-12:29:17.791 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:17.791 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:17.793 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:17.793 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:17.793 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:17.794 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:17.794 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:17.794 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:17.794 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
-get CS_EVENT
-
-[210 CS_EVENT:EV_NONE]
-12:29:18.313 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:18.313 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:18.314 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:18.314 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:18.314 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:18.314 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:18.314 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:18.315 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:18.315 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
-signon 7:81
-
-[551 Authentication failed]
-12:29:18.833 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:18.833 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:18.834 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:18.834 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:18.834 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:18.834 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:18.835 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:18.835 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:18.835 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
-get MS_BCPFX
-
-[210 MS_BCPFX:8888]
-12:29:19.353 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:19.353 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:19.354 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:19.354 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:19.354 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:19.354 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:19.355 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:19.355 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:19.355 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
-signon 7:81
-
-[551 Authentication failed]
-12:29:19.873 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:19.873 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:19.874 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:19.874 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:19.874 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:19.875 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:19.875 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:19.875 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:19.875 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+[251 Signed On]
+14:26:25.996 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:25.996 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:25.997 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:25.997 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
 get SI_SOFTW
 
 [210 SI_SOFTW:2.0]
-12:29:20.393 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:20.394 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:20.394 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:20.394 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:20.395 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:20.395 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:20.395 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:20.396 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:20.396 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
-get SI_MODEL
+14:26:26.515 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:26.515 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:26.516 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:26.516 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Ending;
+14:26:26.516 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
+signoff
 
-[210 SI_MODEL:Simulator-Python]
-12:29:20.914 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:20.914 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:20.915 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:20.915 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:20.915 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:20.915 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:20.916 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:20.916 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:20.916 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
+[250 Signed Off]
+14:26:27.034 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:27.034 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:27.035 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:27.035 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:27.035 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:27.035 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:27.035 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:27.035 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:27.036 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
 signon 7:81
 
 [551 Authentication failed]
-12:29:21.434 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:21.435 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
-12:29:21.435 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@1c00809b
-12:29:21.435 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@3dfe5b80 state==AS_Idle
-12:29:21.436 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@318d491 state==AS_Idle
-12:29:21.436 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4ea9666b state==AS_Closed
-12:29:21.436 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@40e43e10 state==Not_Signed
-12:29:21.436 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@f895fd7 state==AS_Open
-12:29:21.437 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+14:26:27.554 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:27.554 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:27.555 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:27.555 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:27.555 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:27.555 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:27.555 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:27.555 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:27.555 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get Invalid
+
+[510 No such variable]
+14:26:28.073 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:28.074 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:28.074 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:28.074 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:28.074 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:28.074 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:28.075 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:28.075 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:28.075 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_SOFTWWWW
+
+[510 No such variable]
+14:26:28.593 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:28.593 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:28.594 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:28.594 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:28.594 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:28.595 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:28.595 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:28.595 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:28.595 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get SI_SOFTW
+
+[210 SI_SOFTW:2.0]
+14:26:29.113 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:29.113 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:29.114 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:29.114 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:29.114 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:29.114 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:29.114 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:29.115 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:29.115 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_MODELLL
+
+[510 No such variable]
+14:26:29.633 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:29.633 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:29.634 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:29.634 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:29.634 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:29.634 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:29.634 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:29.635 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:29.635 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid -1
+
+[550 Not signed on]
+14:26:30.153 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:30.153 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:30.154 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:30.154 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:30.154 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:30.154 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:30.154 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:30.154 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:30.155 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 22
+
+[550 Not signed on]
+14:26:30.673 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:30.673 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:30.674 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:30.674 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:30.674 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:30.674 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:30.674 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:30.674 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:30.675 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
+signon 8:01
+
+[251 Signed On]
+14:26:31.193 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:31.193 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:31.194 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:31.194 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid -1
+
+[511 No such article]
+14:26:31.712 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:31.712 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:31.713 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:31.713 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 20013226
+
+[213 desc=&quot;Magnezium pezsgotabl&quot; price=4,69]
+14:26:32.231 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:32.231 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:32.232 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:32.232 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_MODELLL
+
+[510 No such variable]
+14:26:32.750 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:32.751 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:32.751 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:32.751 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_MODELLL
+
+[510 No such variable]
+14:26:33.269 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:33.270 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:33.270 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:33.270 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 59922827
+
+[213 desc=&quot;Multifilter kek&quot; price=6,99 age]
+14:26:33.789 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:33.789 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:33.789 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:33.789 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get LC_SEPCH
+
+[210 LC_SEPCH:,]
+14:26:34.308 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:34.308 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:34.308 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:34.308 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Ending;
+14:26:34.308 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
+signoff
+
+[250 Signed Off]
+14:26:34.827 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:34.827 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:34.827 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:34.827 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:34.828 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:34.828 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:34.828 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:34.828 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:34.828 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_off
+signoff
+
+[550 Not signed on]
+14:26:35.346 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:35.346 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:35.347 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:35.347 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:35.347 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:35.347 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:35.348 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:35.348 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:35.348 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 20013226
+
+[550 Not signed on]
+14:26:35.866 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:35.866 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:35.867 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:35.867 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:35.867 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:35.867 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:35.867 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:35.868 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:35.868 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_off
+signoff
+
+[550 Not signed on]
+14:26:36.386 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:36.386 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:36.387 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:36.387 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:36.387 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:36.388 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:36.388 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:36.388 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:36.388 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 12313
+
+[550 Not signed on]
+14:26:36.906 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:36.906 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:36.907 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:36.907 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:36.907 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:36.907 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:36.907 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:36.907 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:36.908 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
+signon 8:01
+
+[251 Signed On]
+14:26:37.426 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:37.426 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:37.427 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:37.427 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 12313
+
+[511 No such article]
+14:26:37.946 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:37.946 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:37.946 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:37.946 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Ending;
+14:26:37.947 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
+signoff
+
+[250 Signed Off]
+14:26:38.465 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:38.465 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:38.465 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:38.466 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:38.466 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:38.466 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:38.466 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:38.466 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:38.466 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
+signon 8:01
+
+[251 Signed On]
+14:26:38.985 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:38.985 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:38.986 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:38.986 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_SOFTWWWW
+
+[510 No such variable]
+14:26:39.504 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:39.504 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:39.505 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:39.505 [main] DEBUG o.g.core.machine.ExecutionContext - Execute idle
+idle
+
+[233 Account Idled]
+14:26:40.027 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:40.027 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:26:40.028 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:40.028 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get SI_SOFTW
+
+[210 SI_SOFTW:2.0]
+14:26:40.546 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:40.546 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:26:40.547 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:40.547 [main] DEBUG o.g.core.machine.ExecutionContext - Execute open_acc
+open
+
+[231 004831 Account opened]
+14:26:41.065 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:41.065 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:26:41.066 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:41.066 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_reg
+artreg 22:1
+
+[511 No such article]
+14:26:43.588 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:43.588 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:26:43.589 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:43.589 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Open;
+14:26:43.592 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
+signoff
+
+[250 Signed Off]
+14:26:44.110 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:44.110 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:44.111 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:44.111 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:44.111 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:44.111 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:44.111 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:44.111 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:44.111 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_SOFTWWWW
+
+[510 No such variable]
+14:26:44.630 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:44.630 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:44.630 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:44.630 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:44.630 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:44.631 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:44.631 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:44.631 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:44.631 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 20013226
+
+[550 Not signed on]
+14:26:45.149 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:45.149 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:45.150 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:45.150 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:45.150 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:45.150 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:45.150 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:45.150 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:45.150 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
+signon 8:01
+
+[251 Signed On]
+14:26:45.668 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:45.669 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:26:45.669 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:45.669 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get SI_MODEL
+
+[210 SI_MODEL:Simulator-Python]
+14:26:46.187 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:46.187 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:26:46.188 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:46.188 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_reg
+artreg 22:1
+
+[511 No such article]
+14:26:48.711 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:48.711 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:26:48.711 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:48.711 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 5998386301215
+
+[213 desc=&quot;Citrom izu szorp&quot; price=1,49]
+14:26:49.230 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:49.230 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:26:49.231 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:49.231 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_reg
+artreg -1:1
+
+[511 No such article]
+14:26:51.754 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:51.755 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:26:51.755 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:51.755 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get CS_SIGN
+
+[210 CS_SIGN:SS_ON]
+14:26:52.273 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:52.273 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:26:52.274 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:52.274 [main] DEBUG o.g.core.machine.ExecutionContext - Execute close_acc
+close
+
+[230 0,00 Account closed]
+14:26:52.792 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:52.793 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Closed
+14:26:52.793 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:52.793 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_trans
+trans TM_CASH
+
+[240 0,00 Transaction succeeded]
+14:26:53.312 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:53.312 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:53.312 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:53.312 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Ending;
+14:26:53.313 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
+signoff
+
+[250 Signed Off]
+14:26:53.831 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:53.831 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:53.831 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:53.832 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:53.832 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:53.832 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:53.832 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:53.832 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:53.832 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 20013226
+
+[550 Not signed on]
+14:26:54.351 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:54.351 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:54.352 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:54.352 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:54.352 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:54.352 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:54.352 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:54.352 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:54.353 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 59922827
+
+[550 Not signed on]
+14:26:54.871 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:54.871 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:54.872 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:54.872 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:54.872 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:54.872 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:54.872 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:54.872 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:54.872 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get Invalid
+
+[510 No such variable]
+14:26:55.391 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:55.391 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:55.391 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:55.391 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:55.391 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:55.392 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:55.392 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:55.392 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:55.392 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
+signon 8:01
+
+[251 Signed On]
+14:26:55.910 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:55.910 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:55.911 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:55.911 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get Invalid
+
+[510 No such variable]
+14:26:56.429 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:56.429 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:26:56.429 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:56.429 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Ending;
+14:26:56.430 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
+signoff
+
+[250 Signed Off]
+14:26:56.948 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:56.948 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:56.948 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:56.948 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:56.948 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:56.948 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:56.949 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:56.949 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:56.949 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 22
+
+[550 Not signed on]
+14:26:57.467 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:57.467 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:57.467 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:57.468 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:57.468 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:57.468 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:57.468 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:57.468 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:57.468 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 5998386301215
+
+[550 Not signed on]
+14:26:57.986 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:57.986 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:57.987 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:57.987 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:57.987 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:57.987 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:57.987 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:57.987 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:57.988 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get LC_WEIGHT
+
+[210 LC_WEIGHT:GR]
+14:26:58.506 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:58.506 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:58.507 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:58.507 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:58.508 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:58.508 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:58.508 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:58.508 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:58.508 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_off
+signoff
+
+[550 Not signed on]
+14:26:59.026 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:59.027 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:59.027 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:59.027 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:59.027 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:59.027 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:59.027 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:59.028 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:59.028 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 59922827
+
+[550 Not signed on]
+14:26:59.546 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:59.546 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:26:59.546 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:26:59.546 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:26:59.546 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:26:59.546 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:26:59.546 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:26:59.547 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:26:59.547 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
+signon 7:81
+
+[551 Authentication failed]
+14:27:00.065 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:00.065 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:00.065 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:00.065 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:00.066 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:00.066 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:00.066 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:00.066 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:00.066 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 5998386301215
+
+[550 Not signed on]
+14:27:00.584 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:00.584 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:00.585 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:00.585 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:00.585 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:00.585 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:00.585 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:00.585 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:00.585 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
+signon 7:81
+
+[551 Authentication failed]
+14:27:01.103 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:01.103 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:01.104 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:01.104 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:01.104 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:01.104 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:01.105 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:01.105 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:01.105 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get MS_BCPFX
+
+[210 MS_BCPFX:8888]
+14:27:01.623 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:01.623 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:01.624 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:01.624 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:01.624 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:01.624 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:01.624 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:01.624 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:01.624 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid -1
+
+[550 Not signed on]
+14:27:02.142 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:02.143 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:02.143 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:02.143 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:02.143 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:02.143 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:02.143 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:02.143 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:02.144 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
+signon 8:01
+
+[251 Signed On]
+14:27:02.662 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:02.662 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:02.662 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:02.662 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid -1
+
+[511 No such article]
+14:27:03.181 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:03.181 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:03.181 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:03.181 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get TC_FLUSH
+
+[210 TC_FLUSH:1]
+14:27:03.699 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:03.700 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:03.700 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:03.700 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 59922827
+
+[213 desc=&quot;Multifilter kek&quot; price=6,99 age]
+14:27:04.218 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:04.218 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:04.219 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:04.219 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_MODELLL
+
+[510 No such variable]
+14:27:04.737 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:04.737 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:04.738 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:04.738 [main] DEBUG o.g.core.machine.ExecutionContext - Execute idle
+idle
+
+[233 Account Idled]
+14:27:05.256 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:05.256 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:05.256 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:05.256 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get Invalid
+
+[510 No such variable]
+14:27:05.774 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:05.774 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:05.775 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:05.775 [main] DEBUG o.g.core.machine.ExecutionContext - Execute open_acc
+open
+
+[231 008621 Account opened]
+14:27:06.293 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:06.293 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:27:06.294 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:06.294 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 22
+
+[511 No such article]
+14:27:06.812 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:06.812 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:27:06.813 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:06.813 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_reg
+artreg 5998386301215:1
+
+[212 Citrom izu szorp:1,49, 232 1: 1,49 Article registered]
+14:27:07.343 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:07.343 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:27:07.343 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:07.343 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Open;
+14:27:07.343 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
+signoff
+
+[250 Signed Off]
+14:27:07.861 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:07.862 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:07.862 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:07.862 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:07.862 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:07.862 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:07.863 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:07.863 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:07.863 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
+signon 8:01
+
+[251 Signed On]
+14:27:08.381 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:08.381 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:27:08.382 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:08.382 [main] DEBUG o.g.core.machine.ExecutionContext - Execute close_acc
+close
+
+[230 1,49 Account closed]
+14:27:08.900 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:08.900 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Closed
+14:27:08.901 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:08.901 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_trans
+trans TM_CASH
+
+[240 0,00 Transaction succeeded]
+14:27:09.419 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:09.419 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:09.420 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:09.420 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get CS_EVENT
+
+[210 CS_EVENT:EV_NONE]
+14:27:09.939 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:09.939 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:09.939 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:09.939 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_SOFTWWWW
+
+[510 No such variable]
+14:27:10.458 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:10.458 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:10.458 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:10.458 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid -1
+
+[511 No such article]
+14:27:10.977 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:10.977 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:10.978 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:10.978 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid -1
+
+[511 No such article]
+14:27:11.496 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:11.497 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:11.499 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:11.499 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 59922827
+
+[213 desc=&quot;Multifilter kek&quot; price=6,99 age]
+14:27:12.017 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:12.017 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:12.018 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:12.018 [main] DEBUG o.g.core.machine.ExecutionContext - Execute idle
+idle
+
+[233 Account Idled]
+14:27:12.536 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:12.536 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:12.536 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:12.536 [main] DEBUG o.g.core.machine.ExecutionContext - Execute open_acc
+open
+
+[231 008092 Account opened]
+14:27:13.054 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:13.054 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:27:13.055 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:13.055 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 59922827
+
+[213 desc=&quot;Multifilter kek&quot; price=6,99 age]
+14:27:13.573 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:13.573 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:27:13.574 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:13.574 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 22
+
+[511 No such article]
+14:27:14.092 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:14.092 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:27:14.093 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:14.093 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get TC_BANK
+
+[210 TC_BANK:1]
+14:27:14.611 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:14.611 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:27:14.611 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:14.611 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Open;
+14:27:14.611 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
+signoff
+
+[250 Signed Off]
+14:27:15.129 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:15.130 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:15.130 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:15.130 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:15.130 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:15.130 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:15.130 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:15.130 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:15.131 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
+signon 7:81
+
+[551 Authentication failed]
+14:27:15.649 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:15.649 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:15.649 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:15.649 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:15.649 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:15.650 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:15.650 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:15.650 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:15.650 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_off
+signoff
+
+[550 Not signed on]
+14:27:16.168 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:16.168 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:16.168 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:16.169 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:16.169 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:16.169 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:16.169 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:16.169 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:16.169 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_SOFTWWWW
+
+[510 No such variable]
+14:27:16.687 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:16.688 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:16.688 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:16.688 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:16.688 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:16.688 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:16.689 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:16.689 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:16.689 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
+signon 8:01
+
+[251 Signed On]
+14:27:17.207 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:17.207 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Open
+14:27:17.207 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:17.207 [main] DEBUG o.g.core.machine.ExecutionContext - Execute close_acc
+close
+
+[230 0,00 Account closed]
+14:27:17.725 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:17.726 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Closed
+14:27:17.726 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:17.726 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 22
+
+[511 No such article]
+14:27:18.244 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:18.244 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Closed
+14:27:18.245 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:18.245 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_trans
+trans TM_CASHhhhh
+
+[540 No Such Transaction method]
+14:27:18.763 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:18.763 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Closed
+14:27:18.764 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:18.764 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get CS_SIGN
+
+[210 CS_SIGN:SS_ON]
+14:27:19.282 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:19.282 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Closed
+14:27:19.282 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:19.282 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_trans
+trans TM_CASH
+
+[240 0,00 Transaction succeeded]
+14:27:19.800 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:19.801 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:19.801 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:19.801 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 22
+
+[511 No such article]
+14:27:20.319 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:20.319 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:20.320 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:20.320 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get TC_CASH
+
+[210 TC_CASH:1]
+14:27:20.838 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:20.838 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:20.838 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:20.838 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get Invalid
+
+[510 No such variable]
+14:27:21.357 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:21.357 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:21.357 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:21.357 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get Invalid
+
+[510 No such variable]
+14:27:21.875 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:21.875 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:21.876 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:21.876 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 5998386301215
+
+[213 desc=&quot;Citrom izu szorp&quot; price=1,49]
+14:27:22.394 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:22.394 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:22.395 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:22.395 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 22
+
+[511 No such article]
+14:27:22.913 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:22.913 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Ending
+14:27:22.913 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:22.914 [main] DEBUG o.g.core.machine.ExecutionContext - Execute idle
+idle
+
+[233 Account Idled]
+14:27:23.432 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:23.432 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:23.433 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:23.433 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get AI_STAMP
+
+[210 AI_STAMP:0:0,00]
+14:27:23.951 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:23.951 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:23.951 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:23.951 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get Invalid
+
+[510 No such variable]
+14:27:24.469 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:24.469 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:24.469 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:24.469 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Idle;
+14:27:24.469 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
+signoff
+
+[250 Signed Off]
+14:27:24.987 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:24.987 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:24.988 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:24.988 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:24.988 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:24.988 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:24.988 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:24.988 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:24.988 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_SOFTWWWW
+
+[510 No such variable]
+14:27:25.506 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:25.506 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:25.507 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:25.507 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:25.507 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:25.507 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:25.507 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:25.507 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:25.507 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 20013226
+
+[550 Not signed on]
+14:27:26.025 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:26.025 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:26.026 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:26.026 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:26.026 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:26.026 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:26.026 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:26.026 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:26.026 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 20013226
+
+[550 Not signed on]
+14:27:26.544 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:26.545 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:26.545 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:26.545 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:26.545 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:26.545 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:26.545 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:26.546 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:26.546 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get SI_MODEL
+
+[210 SI_MODEL:Simulator-Python]
+14:27:27.064 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:27.064 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:27.064 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:27.064 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:27.065 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:27.065 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:27.065 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:27.065 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:27.065 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
+signon 7:81
+
+[551 Authentication failed]
+14:27:27.583 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:27.583 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:27.583 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:27.583 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:27.584 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:27.584 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:27.584 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:27.584 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:27.584 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
+signon 8:01
+
+[251 Signed On]
+14:27:28.102 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:28.102 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:28.102 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:28.102 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get Invalid
+
+[510 No such variable]
+14:27:28.621 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:28.621 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:28.621 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:28.621 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 22
+
+[511 No such article]
+14:27:29.140 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:29.140 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:29.140 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:29.140 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_SOFTWWWW
+
+[510 No such variable]
+14:27:29.658 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:29.658 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:29.659 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:29.659 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Idle;
+14:27:29.659 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
+signoff
+
+[250 Signed Off]
+14:27:30.177 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:30.177 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:30.178 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:30.178 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:30.178 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:30.178 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:30.178 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:30.178 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:30.178 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid -1
+
+[550 Not signed on]
+14:27:30.698 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:30.698 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:30.698 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:30.698 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:30.698 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:30.698 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:30.698 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:30.699 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:30.699 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
+signon 7:81
+
+[551 Authentication failed]
+14:27:31.217 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:31.217 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:31.217 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:31.217 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:31.218 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:31.218 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:31.218 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:31.218 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:31.218 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
+signon 7:81
+
+[551 Authentication failed]
+14:27:31.736 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:31.736 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:31.737 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:31.737 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:31.737 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:31.737 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:31.737 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:31.737 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:31.737 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
+signon 8:01
+
+[251 Signed On]
+14:27:32.255 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:32.255 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:32.256 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:32.256 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 5998386301215
+
+[213 desc=&quot;Citrom izu szorp&quot; price=1,49]
+14:27:32.774 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:32.774 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:32.775 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:32.775 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Idle;
+14:27:32.775 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
+signoff
+
+[250 Signed Off]
+14:27:33.293 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:33.293 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:33.294 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:33.294 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:33.294 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:33.294 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:33.294 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:33.294 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:33.294 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_SOFTWWWW
+
+[510 No such variable]
+14:27:33.813 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:33.813 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:33.813 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:33.813 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:33.813 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:33.813 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:33.813 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:33.813 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:33.814 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_off
+signoff
+
+[550 Not signed on]
+14:27:34.332 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:34.332 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:34.332 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:34.332 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:34.332 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:34.332 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:34.332 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:34.333 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:34.333 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get CS_ACCNT
+
+[210 CS_ACCNT:1:AS_IDLE]
+14:27:34.851 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:34.851 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:34.852 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:34.852 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:34.852 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:34.852 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:34.852 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:34.852 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:34.852 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
+signon 8:01
+
+[251 Signed On]
+14:27:35.370 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:35.371 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:35.371 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:35.371 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_MODELLL
+
+[510 No such variable]
+14:27:35.889 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:35.889 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:35.890 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:35.890 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get Invalid
+
+[510 No such variable]
+14:27:36.408 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:36.408 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:36.409 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:36.409 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid -1
+
+[511 No such article]
+14:27:36.929 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:36.929 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:36.929 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:36.929 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get SI_MODEL
+
+[210 SI_MODEL:Simulator-Python]
+14:27:37.448 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:37.448 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:37.448 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:37.448 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 12313
+
+[511 No such article]
+14:27:37.966 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:37.966 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:37.967 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:37.967 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Idle;
+14:27:37.967 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
+signoff
+
+[250 Signed Off]
+14:27:38.485 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:38.485 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:38.485 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:38.485 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:38.485 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:38.486 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:38.486 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:38.486 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:38.486 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 20013226
+
+[550 Not signed on]
+14:27:39.004 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:39.004 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:39.004 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:39.004 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:39.004 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:39.004 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:39.004 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:39.004 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:39.005 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
+signon 8:01
+
+[251 Signed On]
+14:27:39.522 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:39.523 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:39.523 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:39.523 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 5998386301215
+
+[213 desc=&quot;Citrom izu szorp&quot; price=1,49]
+14:27:40.043 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:40.043 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:40.044 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:40.044 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 0
+
+[511 No such article]
+14:27:40.562 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:40.562 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:40.564 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:40.564 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Idle;
+14:27:40.564 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
+signoff
+
+[250 Signed Off]
+14:27:41.082 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:41.082 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:41.082 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:41.082 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:41.083 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:41.083 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:41.083 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:41.083 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:41.083 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid -1
+
+[550 Not signed on]
+14:27:41.601 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:41.601 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:41.602 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:41.602 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:41.602 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:41.602 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:41.602 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:41.602 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:41.603 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get CS_SIGN
+
+[210 CS_SIGN:SS_OFF]
+14:27:42.120 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:42.120 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:42.121 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:42.121 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:42.121 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:42.121 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:42.121 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:42.121 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:42.121 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_off
+signoff
+
+[550 Not signed on]
+14:27:42.639 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:42.639 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:42.640 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:42.640 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:42.640 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:42.640 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:42.640 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:42.640 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:42.640 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_MODELLL
+
+[510 No such variable]
+14:27:43.158 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:43.158 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:43.159 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:43.159 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:43.159 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:43.159 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:43.160 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:43.160 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:43.160 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 12313
+
+[550 Not signed on]
+14:27:43.678 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:43.678 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:43.679 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:43.679 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:43.679 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:43.679 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:43.679 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:43.679 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:43.679 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get SI_SCRP
+
+[210 SI_SCRP:2.1]
+14:27:44.198 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:44.198 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:44.199 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:44.199 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:44.199 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:44.199 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:44.199 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:44.199 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:44.199 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_art_id
+artid 12313
+
+[550 Not signed on]
+14:27:44.717 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:44.717 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:44.718 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:44.718 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:44.718 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:44.718 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:44.718 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:44.718 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:44.719 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get LC_FRACT
+
+[210 LC_FRACT:2]
+14:27:45.236 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:45.237 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:45.237 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:45.237 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:45.237 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:45.237 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:45.237 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:45.237 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:45.238 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_off
+signoff
+
+[550 Not signed on]
+14:27:45.755 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:45.756 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:45.756 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:45.756 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:45.756 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:45.756 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:45.756 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:45.757 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:45.757 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_MODELLL
+
+[510 No such variable]
+14:27:46.275 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:46.275 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:46.275 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:46.275 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:46.275 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:46.276 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:46.276 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:46.276 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:46.276 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_off
+signoff
+
+[550 Not signed on]
+14:27:46.794 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:46.794 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:46.794 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:46.794 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:46.794 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:46.794 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:46.794 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:46.795 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:46.795 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
+signon 7:81
+
+[551 Authentication failed]
+14:27:47.313 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:47.313 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:47.313 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:47.313 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:47.313 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:47.313 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:47.313 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:47.313 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:47.314 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get SI_SCRP
+
+[210 SI_SCRP:2.1]
+14:27:47.831 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:47.832 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:47.832 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:47.832 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:47.832 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:47.832 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:47.832 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:47.832 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:47.832 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_on
+signon 8:01
+
+[251 Signed On]
+14:27:48.350 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:48.350 [main] DEBUG o.g.core.machine.ExecutionContext - Execute AS_Idle
+14:27:48.352 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:48.352 [main] DEBUG o.g.core.machine.ExecutionContext - Execute state=AS_Idle;
+14:27:48.353 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_sign_off
+signoff
+
+[250 Signed Off]
+14:27:48.870 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:48.870 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:48.871 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:48.871 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:48.871 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:48.871 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:48.871 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:48.871 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:48.871 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
+get TC_BANK
+
+[210 TC_BANK:1]
+14:27:49.389 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:49.389 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:49.390 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:49.390 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:49.390 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:49.390 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:49.390 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:49.390 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:49.391 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get SI_MODELLL
+
+[510 No such variable]
+14:27:49.908 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:49.908 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:49.909 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:49.909 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:49.909 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:49.909 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:49.909 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:49.909 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:49.910 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_get
+get Invalid
+
+[510 No such variable]
+14:27:50.429 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:50.429 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:50.429 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:50.430 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:50.430 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:50.430 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:50.430 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:50.430 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:50.430 [main] DEBUG o.g.core.machine.ExecutionContext - Execute invalid_sign_on
+signon 7:81
+
+[551 Authentication failed]
+14:27:50.948 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:50.948 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:50.949 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:50.949 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:50.949 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:50.949 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:50.949 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:50.949 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:50.949 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_art_id
+artid 5998386301215
+
+[550 Not signed on]
+14:27:51.469 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:51.469 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:51.469 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:51.469 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@4f6f13f0 state==AS_Idle
+14:27:51.469 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2e9ab0b3 state==AS_Ending
+14:27:51.469 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@6b283550 state==AS_Closed
+14:27:51.469 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@2460c928 state==Not_Signed
+14:27:51.469 [main] DEBUG o.g.core.machine.ExecutionContext - Execute org.graphwalker.core.model.Guard@13a7aec7 state==AS_Open
+14:27:51.470 [main] DEBUG o.g.core.machine.ExecutionContext - Execute valid_get
 get PC_SFU
 
 [510 No such variable]
-12:29:21.955 [main] ERROR o.g.core.machine.ExecutionContext - null
-12:29:21.955 [main] ERROR o.g.core.machine.SimpleMachine - java.lang.AssertionError
-12:29:21.955 [main] ERROR o.graphwalker.java.test.TestExecutor - java.lang.AssertionError
+14:27:51.987 [main] DEBUG o.g.core.machine.SimpleMachine - Context: org.myorg.testautomation.ScanflowTest@33ce57f4
+14:27:51.987 [main] DEBUG o.g.core.machine.ExecutionContext - Execute Not_Signed
+14:27:51.988 [main] ERROR o.g.core.machine.ExecutionContext - null
+14:27:51.988 [main] ERROR o.g.core.machine.SimpleMachine - java.lang.AssertionError
+14:27:51.988 [main] ERROR o.graphwalker.java.test.TestExecutor - java.lang.AssertionError
 </system-out>
   </testcase>
 </testsuite>

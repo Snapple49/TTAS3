@@ -67,4 +67,10 @@ public interface Scanflow {
 
     @Edge()
     void connect();
+
+    @Edge()
+    void valid_art_id();
+
+    @Edge()
+    void invalid_art_id();
 }

@@ -1,6 +1,7 @@
 package org.myorg.testautomation;
 
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 
 import org.graphwalker.core.condition.EdgeCoverage;
 import org.graphwalker.core.condition.ReachedVertex;
@@ -18,13 +19,16 @@ import java.nio.file.Paths;
 import java.util.concurrent.TimeUnit;
 import java.util.List;
 import java.util.Random;
+import java.util.Arrays;
 
 public class ScanflowTest extends ExecutionContext implements Scanflow {
     public final static Path MODEL_PATH = Paths.get("org/myorg/testautomation/Scanflow.graphml");
     private static Random random;
 
     private ScanflowInterface sf;
-    public ScanflowState previousState = ScanflowState.Not_Signed;
+    private boolean signed = false;
+    private List<ResponseCode> response;
+    private List<ResponseCode> expected;
 
     public static <T extends Enum<?>> T randomEnumValue(Class<T> cls){
         int x = random.nextInt(cls.getEnumConstants().length);
@@ -35,136 +39,167 @@ public class ScanflowTest extends ExecutionContext implements Scanflow {
         random = new Random();
     }
 
+    private boolean validateResponse(){
+        return response.equals(expected);
+    }
+
     @Override
     public void Disconnected(){
-        
-    }
-
-    @Override
-    public void Not_Signed(){
-    	
-    }
-
-     @Override
-    public void AS_Open(){
-        previousState = ScanflowState.AS_Open;
-    }
-
-    @Override
-    public void AS_Idle(){
-        previousState = ScanflowState.AS_Idle;
-    }
-
-    @Override
-    public void AS_Closed(){
-        previousState = ScanflowState.AS_Closed;
-    }
-
-    @Override
-    public void AS_Ending(){
-        previousState = ScanflowState.AS_Ending;
-    }
-
-    @Override
-    public void connect(){
         this.sf = new ScanflowInterface();
     }
 
     @Override
+    public void Not_Signed(){
+        assertFalse(signed);
+    	assertTrue(validateResponse());
+    }
+
+     @Override
+    public void AS_Open(){
+        assertTrue(signed);
+        assertTrue(validateResponse());
+    }
+
+    @Override
+    public void AS_Idle(){
+        assertTrue(signed);
+        assertTrue(validateResponse());
+    }
+
+    @Override
+    public void AS_Closed(){
+        assertTrue(signed);
+        assertTrue(validateResponse());
+    }
+
+    @Override
+    public void AS_Ending(){
+        assertTrue(signed);
+        assertTrue(validateResponse());
+    }
+
+    @Override
+    public void connect(){
+        response = sf.connect();
+        expected = Arrays.asList(ResponseCode.ServiceReady);
+    }
+
+    @Override
     public void invalid_sign_on(){
-    	List<ResponseCode> response = sf.signOn(7, "81");
-    	assertTrue(response.size() == 1);
-        assertTrue(response.get(0) == ResponseCode.AuthenticationFailed);
+    	response = sf.signOn(7, "81");
+        expected = Arrays.asList(ResponseCode.AuthenticationFailed);
     }
 
     @Override
     public void valid_sign_on(){
-    	List<ResponseCode> response = sf.signOn(8, "01");
-    	assertTrue(response.size() == 1);
-        assertTrue(response.get(0) == ResponseCode.SignedOn);
+        signed = true;
+    	response = sf.signOn(8, "01");
+        expected = Arrays.asList(ResponseCode.SignedOn);
     }
 
     @Override
     public void valid_sign_off(){
-    	List<ResponseCode> response = sf.signOff();
-    	assertTrue(response.size() == 1);
-        assertTrue(response.get(0) == ResponseCode.SignedOff);
+        signed = false;
+    	response = sf.signOff();
+        expected = Arrays.asList(ResponseCode.SignedOff);
     }
 
     @Override
     public void invalid_sign_off(){
-        List<ResponseCode> response = sf.signOff();
-        assertTrue(response.size() == 1);
-        assertTrue(response.get(0) == ResponseCode.NotSignedOn);
+        response = sf.signOff();
+        expected = Arrays.asList(ResponseCode.NotSignedOn);
     }
 
     @Override
     public void idle(){
-        List<ResponseCode> response = sf.idle();
-        assertTrue(response.size() == 1);
-        assertTrue(response.get(0) == ResponseCode.AccountIdled);
+        response = sf.idle();
+        expected = Arrays.asList(ResponseCode.AccountIdled);
     }
 
     @Override
     public void close_acc(){
-        List<ResponseCode> response = sf.closeAccount();
-        assertTrue(response.size() == 1);
-        assertTrue(response.get(0) == ResponseCode.AccountClosed);
+        response = sf.closeAccount();
+        expected = Arrays.asList(ResponseCode.AccountClosed);
     }
 
     @Override
     public void open_acc(){
-        List<ResponseCode> response = sf.openAccount();
-        assertTrue(response.size() == 1);
-        assertTrue(response.get(0) == ResponseCode.AccountOpened);
+        response = sf.openAccount();
+        expected = Arrays.asList(ResponseCode.AccountOpened);
     }
 
     @Override
     public void valid_trans(){
-        List<ResponseCode> response = sf.trans("TM_CASH");
-        assertTrue(response.size() == 1);
-        assertTrue(response.get(0) == ResponseCode.TransactionSucceeded);
+        response = sf.trans("TM_CASH");
+        expected = Arrays.asList(ResponseCode.TransactionSucceeded);
+    }
+
+    @Override
+    public void invalid_trans(){
+        response = sf.trans("TM_CASHhhhh");
+        expected = Arrays.asList(ResponseCode.NoSuchTransactionMethod);
     }
 
     @Override
     public void valid_art_reg(){
         ValidArtId id = randomEnumValue(ValidArtId.class);
-        List<ResponseCode> response = sf.artReg(id.value());
-        assertTrue(response.size() == 2);
-        assertTrue(response.get(0) == ResponseCode.AccountBalance);
-        assertTrue(response.get(1) == ResponseCode.ArtRegistered);
+        response = sf.artReg(id.value());
+        if(signed){
+            expected = Arrays.asList(ResponseCode.AccountBalance, ResponseCode.ArtRegistered);
+        }
+        else{
+            expected = Arrays.asList(ResponseCode.NotSignedOn);
+        }
     }
 
     @Override
     public void invalid_art_reg(){
         InvalidArtId id = randomEnumValue(InvalidArtId.class);
-        List<ResponseCode> response = sf.artReg(id.value());
-        assertTrue(response.size() == 1);
-        assertTrue(response.get(0) == ResponseCode.NoSuchArticle);
+        response = sf.artReg(id.value());
+        if(signed){
+            expected = Arrays.asList(ResponseCode.NoSuchArticle);
+        }
+        else{
+            expected = Arrays.asList(ResponseCode.NotSignedOn);
+        }
+    }
+
+    @Override
+    public void valid_art_id(){
+        ValidArtId id = randomEnumValue(ValidArtId.class);
+        response = sf.artId(id.value());
+        if(signed){
+            expected = Arrays.asList(ResponseCode.ArtDescription2);
+        }
+        else{
+            expected = Arrays.asList(ResponseCode.NotSignedOn);
+        }
+        
+    }
+
+    public void invalid_art_id(){
+        InvalidArtId id = randomEnumValue(InvalidArtId.class);
+        response = sf.artId(id.value());
+        if(signed){
+            expected = Arrays.asList(ResponseCode.NoSuchArticle);
+        }
+        else{
+            expected = Arrays.asList(ResponseCode.NotSignedOn);
+        }
     }
 
     @Override
     public void valid_get(){
         ValidCRVariable var = randomEnumValue(ValidCRVariable.class);
-        List<ResponseCode> response = sf.getVariable(var.toString());
-        assertTrue(response.size() == 1);
-        assertTrue(response.get(0) == ResponseCode.CRVariable);
+        response = sf.getVariable(var.toString());
+        expected = Arrays.asList(ResponseCode.CRVariable);
     }
 
     @Override
     public void invalid_get(){
-        ValidCRVariable var = randomEnumValue(ValidCRVariable.class);
-        List<ResponseCode> response = sf.getVariable(var.toString());
-        assertTrue(response.size() == 1);
-        assertTrue(response.get(0) == ResponseCode.CRVariable);
-    }
-
-    @Override
-    public void invalid_trans(){
         InvalidCRVariable var = randomEnumValue(InvalidCRVariable.class);
-        List<ResponseCode> response = sf.getVariable(var.toString());
-        assertTrue(response.size() == 1);
-        assertTrue(response.get(0) == ResponseCode.NoSuchVariable);
+        response = sf.getVariable(var.toString());
+        expected = Arrays.asList(ResponseCode.NoSuchVariable);
     }
 
     @Test
@@ -172,22 +207,9 @@ public class ScanflowTest extends ExecutionContext implements Scanflow {
     	new TestBuilder()
     		.setModel(MODEL_PATH)
     		.setContext(this)
-    		.setPathGenerator(new RandomPath(new EdgeCoverage(97)))
+    		.setPathGenerator(new RandomPath(new EdgeCoverage(98)))
     		.setStart("Disconnected")
             .execute();
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
