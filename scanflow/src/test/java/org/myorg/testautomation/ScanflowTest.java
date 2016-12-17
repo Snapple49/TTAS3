@@ -167,7 +167,7 @@ public class ScanflowTest extends ExecutionContext implements Scanflow {
     	new TestBuilder()
     		.setModel(MODEL_PATH)
     		.setContext(this)
-    		.setPathGenerator(new RandomPath(new EdgeCoverage(95)))
+    		.setPathGenerator(new RandomPath(new EdgeCoverage(97)))
     		.setStart("Disconnected")
             .execute();
     }
