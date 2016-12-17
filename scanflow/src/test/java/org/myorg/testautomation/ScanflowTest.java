@@ -74,32 +74,28 @@ public class ScanflowTest extends ExecutionContext implements Scanflow {
     public void invalid_sign_on(){
     	List<ResponseCode> response = sf.signOn(7, "81");
     	assertTrue(response.size() == 1);
-    	boolean valid = response.contains(ResponseCode.AuthenticationFailed);
-    	assertTrue(valid);
+        assertTrue(response.get(0) == ResponseCode.AuthenticationFailed);
     }
 
     @Override
     public void valid_sign_on(){
     	List<ResponseCode> response = sf.signOn(8, "01");
     	assertTrue(response.size() == 1);
-    	boolean valid = response.contains(ResponseCode.SignedOn);
-    	assertTrue(valid);
+        assertTrue(response.get(0) == ResponseCode.SignedOn);
     }
 
     @Override
     public void valid_sign_off(){
     	List<ResponseCode> response = sf.signOff();
     	assertTrue(response.size() == 1);
-    	boolean valid = response.contains(ResponseCode.SignedOff);
-    	assertTrue(valid);
+        assertTrue(response.get(0) == ResponseCode.SignedOff);
     }
 
     @Override
     public void invalid_sign_off(){
         List<ResponseCode> response = sf.signOff();
         assertTrue(response.size() == 1);
-        boolean valid = response.contains(ResponseCode.NotSignedOn);
-        assertTrue(valid);
+        assertTrue(response.get(0) == ResponseCode.NotSignedOn);
     }
 
     @Override
@@ -149,17 +145,26 @@ public class ScanflowTest extends ExecutionContext implements Scanflow {
 
     @Override
     public void valid_get(){
-        
-    }
-
-    @Override
-    public void invalid_trans(){
-
+        ValidCRVariable var = randomEnumValue(ValidCRVariable.class);
+        List<ResponseCode> response = sf.getVariable(var.toString());
+        assertTrue(response.size() == 1);
+        assertTrue(response.get(0) == ResponseCode.CRVariable);
     }
 
     @Override
     public void invalid_get(){
+        ValidCRVariable var = randomEnumValue(ValidCRVariable.class);
+        List<ResponseCode> response = sf.getVariable(var.toString());
+        assertTrue(response.size() == 1);
+        assertTrue(response.get(0) == ResponseCode.CRVariable);
+    }
 
+    @Override
+    public void invalid_trans(){
+        InvalidCRVariable var = randomEnumValue(InvalidCRVariable.class);
+        List<ResponseCode> response = sf.getVariable(var.toString());
+        assertTrue(response.size() == 1);
+        assertTrue(response.get(0) == ResponseCode.NoSuchVariable);
     }
 
     @Test
